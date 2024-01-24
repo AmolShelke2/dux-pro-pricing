@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: #101419;
+}
+
+/* header container */
+.header-section {
+  height: 80px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+
+.header-section .logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-section .logo p {
+  font-size: 40px;
+  font-weight: 900;
+  color: #81a9f7;
+  text-shadow: 2px 2px 4px blue;
+  font-family: "Merriweather", serif;
+}
+
+.header-section .logo p span {
+  color: #fd9398;
+  font-family: "Merriweather", serif;
+  text-shadow: 2px 2px 4px red;
+}
+
+.header-section .nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+.header-section .nav-links li {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.header-section .sign-up-btn {
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  background-color: #ebd2ec;
+  color: #1f1f1f;
+  text-transform: capitalize;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* subscription and pricing title */
+.subscription-and-pricing {
+  margin-top: 40px;
+}
+
+.subscription-and-pricing .section-title {
+  font-size: 35px;
+  color: #e1d1e2;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 10px 4px;
+  font-weight: 500;
+  font-family: "Merriweather", serif;
+}
+
+/* pricing container */
+.pricing-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.pricing-container .card {
+  background-color: #37414a;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  height: auto;
+  width: 320px;
+}
+
+.card h2 {
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 8px;
+}
+.card p {
+  margin-bottom: 6px;
+  color: #ccc;
+  font-weight: 900;
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ccc;
+  text-align: center;
+  height: 40px;
+}
+
+.card .marked-list {
+  margin-top: 30px;
+}
+
+.card .marked-list li {
+  color: #ccc;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.card .unmarked-list li {
+  color: #747474;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin: 6px 0;
+  color: #333333;
+}
+
+.card .btn-1 {
+  background-color: #ccd4ff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.card .btn-2 {
+  background-color: #f8b0fe;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.header-section i {
+  position: absolute;
+  color: #fff;
+  right: 15px;
+  top: 25px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .sign-up-btn {
+    display: none;
+  }
+
+  .header-section .nav-links {
+    display: none;
+  }
+
+  .header-section i {
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    top: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1a1a1a;
+    padding-top: 80px;
+    transition: 0.3s;
+  }
+
+  .mobile-nav-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile-nav-links li {
+    color: #ccc;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .mobile-nav-links li:hover {
+    background-color: #333;
+  }
+
+  .mobile-menu .sign-up-btn {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    background-color: #ebd2ec;
+    color: #1f1f1f;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 10px;
+  }
+
+  .active {
+    left: 0;
+  }
+}

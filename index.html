@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuxPro Subscription</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="icon" sizes="32x32" href="/duxpro-logo.png" />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- header section -->
+      <header class="header-section">
+        <!-- logo -->
+        <div class="logo">
+          <img src="/duxpro-logo.png" height="70" width="70" alt="app-logo" />
+          <p>DUX <span>PRO</span></p>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li>Products</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>contact</li>
+        </ul>
+        <!-- sign up button -->
+        <div class="sign-up-section">
+          <button class="sign-up-btn">sign up</button>
+        </div>
+        <i class="fa-solid fa-bars" id="menu"></i>
+      </header>
+
+      <!-- mobile menu sidebar -->
+      <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+          <li>Products</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        <button class="sign-up-btn">sign up</button>
+      </div>
+      <!-- end mobile menu sidebar -->
+
+      <!-- subscription and pricing container -->
+      <div class="subscription-and-pricing">
+        <h2 class="section-title">Subscription and Pricing</h2>
+
+        <div class="pricing-container">
+          <div class="card">
+            <h2>1 Month</h2>
+            <p>$3.33/Day</p>
+            <h3>Per user $100 billed monthly</h3>
+
+            <ul class="marked-list">
+              <li>✓ Unlimited Access</li>
+              <li>✓ Stocks/Forex/Index/Crypto</li>
+              <li>✓ Trend analysis</li>
+              <li>✓ Signal generation</li>
+              <li>✓ Risk Management</li>
+              <li>✓ Market Visualization</li>
+            </ul>
+
+            <ul class="unmarked-list">
+              <li>x Smart Notifications</li>
+              <li>x Priority Support</li>
+              <li>x Installation Assistance</li>
+              <li>x Advanced Trading Education</li>
+            </ul>
+
+            <button class="btn-1">30 Days Subscription</button>
+          </div>
+          <div class="card">
+            <h2>6 Month</h2>
+            <p>$2.38/Day</p>
+            <h3>Per user $500 billed monthly & bonus 2 month free access</h3>
+
+            <ul class="marked-list">
+              <li>✓ Unlimited Access</li>
+              <li>✓ Stocks/Forex/Index/Crypto</li>
+              <li>✓ Trend analysis</li>
+              <li>✓ Signal generation</li>
+              <li>✓ Risk Management</li>
+              <li>✓ Market Visualization</li>
+              <li>✓ Smart Notifications</li>
+              <li>✓ Priority Support</li>
+            </ul>
+
+            <ul class="unmarked-list">
+              <li>x Installation Assistance</li>
+              <li>x Advanced Trading Education</li>
+            </ul>
+
+            <button class="btn-2">210 Days Subscription</button>
+          </div>
+          <div class="card">
+            <h2>1 Year</h2>
+            <p>$1.96/Day</p>
+            <h3>Per user $100 billed yearly & bonus 5 month free access</h3>
+
+            <ul class="marked-list">
+              <li>✓ Unlimited Access</li>
+              <li>✓ Stocks/Forex/Index/Crypto</li>
+              <li>✓ Trend analysis</li>
+              <li>✓ Signal generation</li>
+              <li>✓ Risk Management</li>
+              <li>✓ Market Visualization</li>
+              <li>✓ Smart Notifications</li>
+              <li>✓ Priority Support</li>
+              <li>✓ Installation Assistance</li>
+              <li>✓ Advanced Trading Education</li>
+            </ul>
+
+            <button class="btn-1">510 Days Subscription</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const barsIcon = document.querySelector("#menu");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      barsIcon.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
